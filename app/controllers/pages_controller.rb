@@ -13,7 +13,7 @@ class PagesController < ApplicationController
 
 
     account_sid = ENV["ACCOUNT_SID"] # Your Account SID from www.twilio.com/console
-    auth_token = ENV["AUTH_TOKEN"]   # Your Auth Token from www.twilio.com/console
+    auth_token =  ENV["AUTH_TOKEN"]   # Your Auth Token from www.twilio.com/console
 
     @client = Twilio::REST::Client.new account_sid, auth_token
     message = @client.account.messages.create(

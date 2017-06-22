@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#home'
   get 'pages/home'
-  post 'sms/send', to: 'pages#sms'
+  post 'sms', to: 'pages#sms'
   get 'pages/sms'
 end

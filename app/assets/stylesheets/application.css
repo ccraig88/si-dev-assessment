@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+ul {
+    display:inline;
+}
+
+body {
+    text-align: center;
+    background:url(https://images.alphacoders.com/739/thumb-1920-73933.jpg);
+    color:white;
+}
+
+li {
+    padding-top:10px;
+}
+
+.mess {
+    font-weight:bold;
+    color:red;
+}

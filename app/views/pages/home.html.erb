@@ -1,6 +1,26 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
 
-<%= form_tag("/sms/send", method: "post") do %>
-<!-- add form elements here -->
+<html>
+<body>
+<h1>Welcome</h1>
+
+
+<%= form_tag("sms/send", method: "post") do %>
+<ul>
+    
+    
+    <li><label for="user">Submit Message:</label></li>
+    <li><textarea type="text" id="user" name="user_text"></textarea></li>
+    
+    
+    <li><label for="tel">Enter Phone Number:</label></li>
+    <li><input type="tel" id="tel" name="user_tel"> </li>
+    
+    <li><%= submit_tag("Submit") %></li>
+    
+</ul>
+
 <% end %>
+
+</body>
+
+</html>

@@ -5,15 +5,15 @@
 
 
 <%= form_tag("sms", method: "post") do %>
+
 <ul>
     
-    
-    <li><label for="user">Submit Message:</label></li>
+    <li><label for="user">Enter Text Message:</label></li>
     <li><textarea type="text" id="user" name="user_text"></textarea></li>
     
     
     <li><label for="tel">Enter Phone Number:</label></li>
-    <li><input type="tel" id="tel" name="user_tel"> </li>
+    <li><input type="tel" id="tel" name="user_tel"></li>
     
     <li><%= submit_tag("Submit") %></li>
     
